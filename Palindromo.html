@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src = EsPalindromo.js></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+        let s = "", v=1;
+         while(v != null){
+        v = prompt('ingrese texto:', '');
+        if(v!=null && v.length >= 1 && v.length <= 100){
+            if(EsPalindromo(v)){
+                s = s + "SI <br> ";
+            }
+            else {
+                s = s + "NO <br> ";
+            }
+    }
+}
+    s = s + "XXX"
+        document.write(s);
+    </script>        
+</body>
+</html>
